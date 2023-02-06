@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    background-color: var(--white);
+    width: 340px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.desktop {
+    display: none;
+}
+
+section {
+    padding: 25px;
+}
+
+.product {
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: 4px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.1rem;
+    color: var(--very-dark-blue);
+    margin: 0;
+}
+
+.description {
+    line-height: 24px;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.new-price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--dark-cyan);
+}
+
+.price {
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--dark-cyan);
+    border: none;
+    padding: 8px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+button img {
+    width: 16px;
+    height: auto;
+    margin: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        flex-direction: row;
+        width: 680px;
+    }
+
+    section {
+        padding: 40px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+        width: 340px;
+        height: auto;
+        border-radius: 20px 0 0 20px;
+    }
+}
