@@ -9,3 +9,4 @@ For visit my profile [clic here](https://www.frontendmentor.io/profile/addielluc
 | Challenger Name | FrontEnd Mentor Link | Live Demo |
 | --- | --- | --- |
 | [Product Preview Card](/product-preview-card-component-main/) | [Challenge](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa) | [Demo](https://product-preview-card-component-main-vert-six.vercel.app/) |
+| [QR Code Component](/qr-code-component/) | [Challenge](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) | [Demo](https://qr-code-component-hazel-psi.vercel.app/) |
