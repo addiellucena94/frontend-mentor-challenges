@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --very-dark-blue-two: hsl(216, 50%, 16%);
+    --very-dark-blue-three: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    background-color: var(--very-dark-blue);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 90%;
+    max-width: 350px;
+    background-color: var(--very-dark-blue-two);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.container:hover {
+    cursor: pointer;
+}
+
+.container:hover .box {
+    opacity: 0.5;
+}
+
+.container:hover .view {
+    opacity: 1;
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cyan);
+    border-radius: 8px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view {
+    opacity: 0;
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+}
+
+.cover {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:hover {
+    color: var(--cyan);
+}
+
+p {
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 0;
+    color: var(--soft-blue);
+    line-height: 1.8rem;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price p {
+    color: var(--cyan);
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time p {
+    color: var(--soft-blue);
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+hr {
+    border: 1px solid var(--very-dark-blue-three);
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.creator img {
+    width: 32px;
+    height: auto;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.creator p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 18px;
+}
