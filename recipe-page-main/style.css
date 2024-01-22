@@ -1,0 +1,154 @@
+:root {
+    --color-nutmeg: hsl(14, 45%, 36%);
+    --color-dark-raspberry: hsl(332, 51%, 32%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-rose-white: hsl(330, 100%, 98%);
+    --color-eggshell: hsl(30, 54%, 90%);
+    --color-light-grey: hsl(30, 18%, 87%);
+    --color-wenge-brown: hsl(30, 10%, 34%);
+    --color-dark-charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-rose-white);
+    font-family: 'Outfit', sans-serif;
+    color: var(--color-wenge-brown);
+}
+
+main {
+    width: 100%;
+    max-width: 375px;
+    background-color: var(--color-white);
+    margin: 0 auto 14px;
+}
+
+.cover-photo {
+    width: 100%;
+    height: auto;
+}
+
+.text-recipe {
+    padding: 24px;
+}
+
+.title {
+    font-size: 24px;
+    color: var(--color-dark-charcoal);
+}
+
+h1, h2 {
+    font-family: 'Young Serif', serif;
+}
+
+.description {
+    margin: 14px 0;
+}
+
+.duration {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color-rose-white);
+}
+
+h3 {
+    color: var(--color-dark-raspberry);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: var(--color-nutmeg);
+    margin: 20px 0;
+}
+
+ul, ol {
+    width: 100%;
+    padding: 10px 24px 0 24px;
+}
+
+ul li::marker, ol li::marker {
+    color: var(--color-nutmeg);
+    font-weight: 700;
+}
+
+.list-item {
+    position: relative;
+    left: 16px;
+}
+
+.line {
+    padding-bottom: 32px;
+    border-bottom: 2px solid var(--color-rose-white);
+}
+
+.table-nutrition {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-table-nutrition {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--color-light-grey);
+}
+
+.name-nutrition, .amount-nutrition {
+    width: 50%;
+}
+
+.name-nutrition {
+    padding-left: 28px;
+}
+
+.amount-nutrition {
+    font-weight: 600;
+    color: var(--color-dark-raspberry);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 375px) {
+    body {
+        margin: 40px auto;
+    }
+
+    main {
+        border-radius: 12px;
+        padding: 24px;
+    }
+
+    .cover-photo {
+        border-radius: 12px;
+    }
+
+    .text-recipe {
+        padding: 0;
+    }
+
+    h1 {
+        margin-top: 24px;
+    }
+}
