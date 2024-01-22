@@ -35,7 +35,7 @@ main {
 }
 
 .avatar-logo {
-    width: 100px;
+    width: 80px;
     height: auto;
     border-radius: 50%;
     margin: 10px;
@@ -64,11 +64,12 @@ p {
     width: 100%;
     background-color: var(--color-grey);
     margin: 8px 0;
-    padding: 12px;
+    padding: 14px;
     text-align: center;
     font-size: 14px;
     border-radius: 8px;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .btn:hover {
