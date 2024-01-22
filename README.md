@@ -12,3 +12,4 @@ For visit my profile [clic here](https://www.frontendmentor.io/profile/addielluc
 | [QR Code Component](/qr-code-component/) | [Challenge](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) | [Demo](https://qr-code-component-hazel-psi.vercel.app/) |
 | [NFT Preview Card](/nft-preview-card/) | [Challenge](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U) | [Demo](https://frontend-mentor-challenges-sandy.vercel.app/) |
 | [Social Link Profile](/social-links-profile-main/) | [Challenge](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ) | [Demo](https://addiellucena94.github.io/frontend-mentor-challenges/social-links-profile-main/) |
+| [Recipe Page Main](/recipe-page-main/) | [Challenge](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm) | [Demo](https://addiellucena94.github.io/frontend-mentor-challenges/recipe-page-main/) |
