@@ -1,0 +1,117 @@
+:root {
+    --color-dark-cyan: hsl(185, 75%, 39%);
+    --color-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --color-dark-grayish-blue: hsl(227, 10%, 46%);
+    --color-dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url('images/bg-pattern-top.svg'), 
+    url('images/bg-pattern-bottom.svg'), var(--color-dark-cyan);;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -600px left -750px, bottom -600px right -750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    max-width: 375px;
+    min-width: 326px;
+    height: auto;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.cover {
+    width: 100%;
+    height: 140px;
+    background: url('images/bg-pattern-card.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar-photo {
+    margin: -53px auto 0;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-very-dark-desaturated-blue);
+    margin-top: 24px;
+}
+
+.age {
+    font-weight: 400;
+    color: var(--color-dark-gray);
+}
+
+.city {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-dark-gray);
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px;
+    border-top: 1px solid var(--color-dark-gray);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-very-dark-desaturated-blue);
+}
+
+.stat-name {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--color-dark-gray);
+    margin-top: 4px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 376px) {
+    body {
+        background-position: top -400px left -300px, bottom -500px right -200px;
+    }
+}
