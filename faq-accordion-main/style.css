@@ -113,3 +113,9 @@ button:hover {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+@media (min-width: 375px) {
+    .cover {
+        background: url(assets/images/background-pattern-desktop.svg), var(--color-dark-purple);
+    }
+}
