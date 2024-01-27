@@ -38,7 +38,7 @@ body {
     width: 100%;
     max-width: 440px;
     height: 50vh;
-    background-color: var(--color-light-violet);
+    background: linear-gradient(var(--color-light-magenta), var(--color-light-violet));
     border-radius: 0 0 50% 0;
     position: absolute;
     left: -50%;
