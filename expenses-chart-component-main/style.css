@@ -1,0 +1,221 @@
+:root {
+    /* Primary */
+    --color-soft-red: hsl(10, 79%, 65%);
+    --color-cyan: hsl(186, 34%, 60%);
+    /* Neutral */
+    --color-dark-brown: hsl(25, 47%, 15%);
+    --color-medium-brown: hsl(28, 10%, 53%);
+    --color-cream: hsl(27, 66%, 92%);
+    --color-very-pale-orange: hsl(33, 100%, 98%);
+}
+
+html {
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-cream);
+}
+
+.balance-summary {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-soft-red);
+    border-radius: 16px;
+}
+
+.balance-amount {
+    color: var(--color-cream);
+}
+
+.your-balance {
+    font-size: 0.8rem;
+}
+
+.balance-quantity {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+
+.balance-info {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    background-color: var(--color-very-pale-orange);
+    border-radius: 16px;
+    padding: 0 16px;
+    margin: 16px 0;
+}
+
+.spending-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 32px 0;
+}
+
+.graph-area {
+    width: 100%;
+    height: auto;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--color-medium-brown);
+}
+
+.column {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.column-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.toggle {
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: var(--color-cream);
+    background-color: var(--color-dark-brown);
+    padding: 4px;
+    border-radius: 3px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.column-group:hover > .toggle {
+    visibility: inherit;
+}
+
+.bar-column {
+    width: 80%;
+    border-radius: 3px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.bar-column:hover {
+    opacity: 0.8;
+}
+
+.bar-column:hover + .toggle {
+    visibility: inherit;
+}
+
+.bar-column-red {
+    background-color: var(--color-soft-red);
+}
+
+.bar-column-cyan {
+    background-color: var(--color-cyan);
+}
+
+.c1 {
+    height: 40px;
+}
+
+.c2 {
+    height: 80px;
+}
+
+.c3 {
+    height: 110px;
+}
+
+.c4 {
+    height: 65px;
+}
+
+.c5 {
+    height: 50px;
+}
+
+.c6 {
+    height: 95px;
+}
+
+.c7 {
+    height: 55px;
+}
+
+.day-week {
+    font-size: 0.8rem;
+    color: var(--color-medium-brown);
+}
+
+.total-area {
+    width: 100%;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--color-dark-brown);
+}
+
+.total-amount {
+    text-align: left;
+}
+
+.total-month-text {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.total-month-value {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.savings {
+    text-align: right;
+}
+
+.savings-percent {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.savings-text {
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
