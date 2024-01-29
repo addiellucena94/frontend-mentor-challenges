@@ -1,0 +1,135 @@
+:root {
+
+    /* Primary */
+
+    --color-red: hsl(0, 78%, 62%);
+    --color-cyan: hsl(180, 62%, 55%);
+    --color-orange: hsl(34, 97%, 64%);
+    --color-blue: hsl(212, 86%, 64%);
+
+    /* Neutral */
+
+    --color-very-dark-blue: hsl(234, 12%, 34%);
+    --color-grayish-blue: hsl(229, 6%, 66%);
+    --color-very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: var(--color-very-dark-blue);
+}
+
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 32px;
+    background-color: var(--color-very-light-gray);
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.title {
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+.subtitle {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.description {
+    color: var(--color-grayish-blue);
+    max-width: 500px;
+    margin: 18px auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.card {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 5px;
+    padding: 24px;
+    margin-top: 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.c1 {
+    border-top: 4px solid var(--color-cyan);
+}
+
+.c2 {
+    border-top: 4px solid var(--color-red);
+}
+
+.c3 {
+    border-top: 4px solid var(--color-orange);
+}
+
+.c4 {
+    border-top: 4px solid var(--color-blue);
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: var(--color-grayish-blue);
+    margin-top: 6px;
+}
+
+.card-box {
+    width: 100%;
+    padding-top: 32px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 668px) {
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 2.2rem;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    .card {
+        margin: 24px 18px;
+    }
+}
