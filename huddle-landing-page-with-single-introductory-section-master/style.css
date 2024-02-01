@@ -1,0 +1,164 @@
+:root {
+    --color-violet: hsl(257, 40%, 49%);
+    --color-soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /*
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    */
+}
+
+body {
+    background: url('images/bg-mobile.svg'),
+    var(--color-violet);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    height: 24px;
+    width: auto;
+}
+
+main {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover {
+    width: 100%;
+    height: auto;
+    padding-bottom: 32px;
+}
+
+.cover-img {
+    width: 100%;
+    height: auto;
+}
+
+.information {
+    width: 100%;
+    height: auto;
+    padding-top: 32px;
+    text-align: center;
+    color: #eee;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.description {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 16px 2px;
+}
+
+.register-btn {
+    width: 200px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: purple;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.register-btn:active, .register-btn:hover {
+    background-color: var(--color-soft-magenta);
+    color: white;
+}
+
+.media-icons {
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-box {
+    width: 28px;
+    height: 28px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.icon-box:hover, .icon-box:active {
+    border-color: var(--color-soft-magenta);
+    color: var(--color-soft-magenta);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: white;
+}
+
+@media (min-width: 757px) {
+    body {
+        background: url('images/bg-desktop.svg'), var(--color-violet);
+        background-repeat: no-repeat;
+    }
+
+    header {
+        padding: 64px;
+    }
+
+    .logo {
+        height: 48px;
+    }
+
+    main {
+        padding:  32px 64px 0; 
+        flex-direction: row;
+    }
+
+    .information {
+        padding-left: 64px;
+        text-align: left;
+    }
+
+    .title {
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .register-btn {
+        width: 160px;
+        padding: 14px;
+    }
+
+    .media-icons {
+        padding: 0 64px;
+        justify-content: flex-end;
+    }
+}
