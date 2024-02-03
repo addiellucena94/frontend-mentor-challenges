@@ -17,10 +17,6 @@
 
 html {
     font-size: 18px;
-    /*
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    */
 }
 
 body {
@@ -53,6 +49,7 @@ header {
     border: none;
     border-radius: 12px;
     box-shadow: 1px 1px 3px 1px var(--color-grayish-blue);
+    cursor: pointer;
 }
 
 main {
@@ -94,6 +91,12 @@ main {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: white;
+    cursor: pointer;
+}
+
+.get-btn:active,
+.get-btn:hover {
+    opacity: 0.8;
 }
 
 .cover-img {
@@ -151,12 +154,11 @@ main {
 
 .box-action {
     width: 350px;
-    max-width: 400px;
     margin: -120px auto 0;
     text-align: center;
     padding: 32px 20px;
     background-color: white;
-    border-radius: 18px;
+    border-radius: 12px;
     box-shadow: 1px -1px 1px 3px var(--color-very-pale-cyan);
 }
 
@@ -175,9 +177,216 @@ main {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: white;
+    cursor: pointer;
+}
+
+.action-btn:active,
+.action-btn:hover {
+    opacity: 0.8;
+}
+
+.logo-box {
+    width: 100%;
+    padding: 64px 0 24px;
+}
+
+.logo-img {
+    width: auto;
+    height: 24px;
+    filter: var(--color-very-pale-cyan);
+}
+
+.info-contact {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--color-very-pale-cyan);
+    display: flex;
+    flex-direction: column;
+}
+
+.address, .phone, .email {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 24px;
+}
+
+.icon-contact {
+    width: 18px;
+    margin-right: 16px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+}
+
+.links-group1, .links-group2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    padding: 6px 0;
+    color: var(--color-very-pale-cyan);
+}
+
+.contact-social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.icon-box {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--color-very-pale-cyan);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+    cursor: pointer;
+    color: var(--color-very-pale-cyan);
+}
+
+.icon-box:active,
+.icon-box:hover {
+    border-color: var(--color-pink);
+    color: var(--color-pink);
 }
 
 .copyright {
     width: 100%;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--color-very-pale-cyan);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 750px) {
+    header {
+        padding: 32px 76px;
+    }
+
+    main {
+        padding: 32px 76px 32px;
+        flex-direction: row;
+        justify-content: space-between;
+        background: url('images/bg-hero-desktop.svg'), linear-gradient(90deg, var(--color-very-pale-cyan), white);
+    background-repeat: no-repeat;
+    }
+
+    .info-main {
+        text-align: left;
+        width: 510px;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .cover-img {
+        width: 55%;
+    }
+
+    .boxes {
+        padding: 48px 76px 128px;
+    }
+
+    .box {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-left: 110px;
+    }
+
+    .box:nth-child(2) {
+        flex-direction: row;
+    }
+
+    .box-text {
+        width: 50%;
+        text-align: left;
+    }
+
+    .box-illustration {
+        width: 40%;
+    }
+
+    .box-title {
+        font-size: 1.5rem;
+        padding: 12px 0;
+    }
+
+    .box-description {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .contact {
+        padding: 32px 76px;
+    }
+
+    .box-action {
+        width: 750px;
+    }
+
+    .action-call {
+        font-size: 1.5rem;
+    }
+
+    .action-btn {
+        width: 330px;
+        height: 56px;
+    }
+
+    .info-contact {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 1rem;
+    }
+
+    .contact-address, 
+    .contact-links, 
+    .contact-social {
+        width: 30%;
+    }
+
+    .contact-links {
+        padding: 0;
+        flex-direction: row;
+    }
+
+    .links-group1,
+    .links-group2 {
+        width: 50%;
+    }
+
+    .contact-social {
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    .copyright {
+        text-align: right;
+    }
 }
