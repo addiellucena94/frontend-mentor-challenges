@@ -271,6 +271,72 @@ footer {
     background-color: var(--color-very-dark-blue);
     color: var(--color-light-grayish-blue);
     font-size: 0.9rem;
+    padding: 56px 32px 48px;
+}
+
+.footer-logo-img {
+    width: auto;
+    height: 36px;
+    margin-bottom: 32px;
+}
+
+.footer-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-box-address {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.footer-box-address-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.footer-box-address-container-text {
+    margin-left: 14px;
+}
+
+.footer-box-link-group1, .footer-box-link-group2 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.footer-box-link-group1-a, .footer-box-link-group2-a {
+    display: block;
+    color: var(--color-light-grayish-blue);
+    text-decoration: none;
+    margin-bottom: 14px;
+}
+
+.footer-box-social {
+    width: 100%;
+    height: auto;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-box-social-icon {
+    width: 28px;
+    height: 28px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+    cursor: pointer;
+    color: white;
 }
 
 .attribution {
