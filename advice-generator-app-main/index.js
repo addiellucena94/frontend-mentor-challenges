@@ -8,7 +8,7 @@ async function fetchAdvice(url) {
         const response = await fetch('https://api.adviceslip.com/advice')
         const data = await response.json()
         console.log(data.slip.advice)
-        adviceId.innerHTML = '<p class="adviceId">Advice #' + data.slip.id +'</p><p class="adviceText">"'+ data.slip.advice +'"</p>'
+        adviceId.innerHTML = '<h1 class="adviceId">Advice #' + data.slip.id +'</h1><p class="adviceText">"'+ data.slip.advice +'"</p>'
     
     } catch(error) {
         console.log(error)
