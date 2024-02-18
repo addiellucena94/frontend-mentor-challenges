@@ -1,0 +1,69 @@
+:root {
+    --color-very-dark-gray: hsl(0, 0%, 17%);
+    --color-dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.cover {
+    width: 100%;
+    height: 40vh;
+    padding: 24px;
+    background-image: url('images/pattern-bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    padding: 8px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.entry {
+    width: 100%;
+    padding: 14px;
+}
+
+.ip {
+    width: 80%;
+    height: 40px;
+    padding-left: 0.4rem;
+    border: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+    color: var(--color-very-dark-gray);
+    font-weight: 700;
+}
+
+.btn {
+    width: 20%;
+    height: 40px;
+    border: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+    background-color: var(--color-very-dark-gray);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
